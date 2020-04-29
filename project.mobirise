@@ -1,0 +1,1602 @@
+{
+  "settings": {
+    "name": "ziro shop-clone",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "storem4",
+      "title": "StoreM4",
+      "styling": {
+        "primaryColor": "#a38dfd",
+        "secondaryColor": "#FE525B",
+        "successColor": "#b2ccd2",
+        "infoColor": "#1BA1E2",
+        "warningColor": "#82786E",
+        "dangerColor": "#879A9F",
+        "mainFont": "Poppins",
+        "display1Font": "Poppins",
+        "display1Size": 4.5,
+        "display2Font": "Poppins",
+        "display2Size": 3,
+        "display5Font": "Comfortaa",
+        "display5Size": 1.5,
+        "display7Font": "Comfortaa",
+        "display7Size": 1.1,
+        "display4Font": "Poppins",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#ffe401"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.12.3",
+    "siteFonts": [
+      {
+        "css": "'Comfortaa', display",
+        "name": "Comfortaa",
+        "url": "https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700"
+      },
+      {
+        "css": "'Poppins', sans-serif",
+        "name": "Poppins",
+        "url": "https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      }
+    ],
+    "imageResize": true,
+    "favicon": "@PROJECT_PATH@/assets/images/logo-ziro-128x128-1.png",
+    "robotsSwitcher": true,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
+    "google-analytics": "<!-- Facebook Pixel Code -->\n<script>\n  !function(f,b,e,v,n,t,s)\n  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?\n  n.callMethod.apply(n,arguments):n.queue.push(arguments)};\n  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\n  n.queue=[];t=b.createElement(e);t.async=!0;\n  t.src=v;s=b.getElementsByTagName(e)[0];\n  s.parentNode.insertBefore(t,s)}(window, document,'script',\n  'https://connect.facebook.net/en_US/fbevents.js');\n  fbq('init', '1008325152564716');\n  fbq('track', 'PageView');\n</script>\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\"\n  src=\"https://www.facebook.com/tr?id=1008325152564716&ev=PageView&noscript=1\"\n/></noscript>\n<!-- End Facebook Pixel Code -->",
+    "uniqCompNum": 14,
+    "versionPublish": "4.12.3",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Salgunamu - Ziro",
+        "meta_descr": "Compre na Salgunamu através da mais avançada plataforma de Atacado do Bom Retiro",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            ".dropdown-item:before": {
+              "font-family": "MobiriseIcons !important",
+              "content": "'\\e966'",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "-webkit-transform": "scale(0, 1)",
+              "transform": "scale(0, 1)",
+              "-webkit-transition": "all 0.25s ease-in-out",
+              "-moz-transition": "all 0.25s ease-in-out",
+              "transition": "all 0.25s ease-in-out"
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            "@media (min-width: 992px)": {
+              ".dropdown-item:hover:before": {
+                "-webkit-transform": "scale(1, 1)",
+                "transform": "scale(1, 1)",
+                "width": "16px"
+              },
+              ".nav-item .nav-link": {
+                "position": "relative",
+                "&::before": {
+                  "position": "absolute",
+                  "content": "''",
+                  "width": "0",
+                  "height": "3px",
+                  "bottom": "-0.5rem",
+                  "left": "50%",
+                  "background": "linear-gradient(90deg, @primaryColor, @secondaryColor)",
+                  "transition": "width 200ms linear, left 200ms linear"
+                }
+              },
+              ".nav-item.open .nav-link::before": {
+                "bottom": ".2rem",
+                "width": "80% !important",
+                "left": "10% !important"
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "calc(100% ~'+' 2rem)",
+                "left": "-1rem"
+              }
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "-webkit-transition": "all 0.25s ease-in-out",
+              "-moz-transition": "all 0.25s ease-in-out",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              "&:hover": {
+                "padding-right": "2.5385em",
+                "padding-left": "3.5385em",
+                ".mbr-iconfont:before": {
+                  "-webkit-transform": "scale(0, 1)",
+                  "transform": "scale(0, 1)"
+                }
+              },
+              ".mbr-iconfont": {
+                "margin-left": "-1.8rem",
+                "padding-right": "1rem",
+                "font-size": "inherit",
+                "&:before": {
+                  "display": "inline-block",
+                  "-webkit-transform": "scale(1, 1)",
+                  "transform": "scale(1, 1)",
+                  "-webkit-transition": "all 0.25s ease-in-out",
+                  "-moz-transition": "all 0.25s ease-in-out",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar": {
+              "min-height": "77px",
+              "transition": "all .3s",
+              "background": "@menuBgColor",
+              "& when (@transparent)": {
+                "background": "none"
+              },
+              "&.opened": {
+                "transition": "all .3s",
+                "background": "@menuBgColor !important"
+              },
+              ".dropdown-item": {
+                "padding": ".235rem 1.5rem"
+              },
+              ".navbar-collapse": {
+                "-webkit-justify-content": "flex-end",
+                "justify-content": "flex-end",
+                "z-index": "1",
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "&.collapsed": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~\"calc(98.5vh - @{logoSize}rem)\""
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  "background": "transparent !important",
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": ".25rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": ".5rem",
+                  "padding-bottom": ".5rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  "background": "transparent !important",
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": ".25rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "55%"
+                  }
+                },
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3.8rem !important"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "-webkit-flex-shrink": "initial",
+                  "flex-shrink": "initial",
+                  "-webkit-flex-basis": "auto",
+                  "flex-basis": "auto",
+                  "word-break": "break-word"
+                },
+                ".navbar-toggler": {
+                  "-webkit-flex-basis": "auto",
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": ".5rem",
+                  "padding-bottom": ".5rem"
+                }
+              },
+              "&.navbar-short": {
+                "background": "@menuBgColor !important",
+                "min-height": "60px",
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3rem !important"
+                  }
+                },
+                ".navbar-brand": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "-webkit-flex-shrink": "0",
+              "flex-shrink": "0",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "0",
+              "transition": "all .3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active,.dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded=\"true\"]": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center"
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all .2s",
+              "position": "relative",
+              "-webkit-align-self": "center",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all .2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all .2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              },
+              "&:nth-child(2)": {
+                "-webkit-transform": "rotate(45deg)",
+                "transform": "rotate(45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(3)": {
+                "-webkit-transform": "rotate(-45deg)",
+                "transform": "rotate(-45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": ".5rem 1rem",
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center"
+            },
+            ".mbr-iconfont": {
+              "font-size": "1.5rem",
+              "padding-right": ".5rem"
+            },
+            ".icons-menu": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap",
+              "display": "flex",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "padding-left": "1rem",
+              "text-align": "center",
+              "span": {
+                "font-size": "20px",
+                "color": "#232323"
+              }
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "77px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~'+' 2rem)",
+                "left": "-1rem"
+              }
+            }
+          },
+          "_name": "menu1",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <select title=\"Icons\" name=\"iconsAmount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\" checked>\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#232323\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n\n    <nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                     'navbar-expand-lg':!collapsed,\n                     'collapsed':collapsed}\">\n        <div class=\"navbar-brand\">\n            <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                <a href=\"https://mobirise.com\">\n                    <img src=\"../_images/logo2.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                </a>\n            </span>\n            <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-5\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption text-black\" data-app-selector=\".navbar-caption\" href=\"https://catalogo.ziro.app/cadastrar\" data-app-placeholder=\"Type Text\">\n                    SALGUNAMU</a></span>\n        </div>\n        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems\">\n            <div class=\"hamburger\">\n                <span></span>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n            <ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                    <a class=\"nav-link link text-black\" href=\"https://catalogo.ziro.app/cadastrar\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        COMPRE</a>\n                </li>\n                <li class=\"nav-item\">\n                    <a class=\"nav-link link text-black\" href=\"https://catalogo.ziro.app/cadastrar\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                        SAIBA PREÇOS</a>\n                </li></ul>\n            <div class=\"icons-menu\" mbr-if=\"showIcons\">\n              <a href=\"https://catalogo.ziro.app/cadastrar\" target=\"_blank\">\n                <span mbr-icon class=\"p-2 mbr-iconfont mbri-search\"></span>\n              </a>\n              <a href=\"https://catalogo.ziro.app/cadastrar\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                <span mbr-icon class=\"p-2 mbr-iconfont mbri-shopping-cart\"></span>\n              </a>\n              <a href=\"https://mobirise.com\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                <span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n              </a>\n              <a href=\"https://mobirise.com\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                <span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n              </a>\n              <a href=\"https://mobirise.com\" target=\"_blank\" mbr-if=\"iconsAmount > 4\">\n                <span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n              </a>\n              <a href=\"https://mobirise.com\" target=\"_blank\" mbr-if=\"iconsAmount > 5\">\n                <span mbr-icon class=\"p-2 mbr-iconfont mbri-info\"></span>\n              </a>\n            </div>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\">\n                <a class=\"btn btn-sm btn-black-outline\" href=\"https://mobirise.com\">\n                  CONTACT US\n                </a>\n            </div>\n      </div>\n    </nav>\n</section>",
+          "_cid": "rW6rbAtnB1",
+          "_anchor": "menu1-3",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title,.mbr-section-subtitle": {
+              "color": "#879a9f"
+            },
+            ".mbr-section-text": {
+              "color": "#767676"
+            },
+            ".mbr-text,.typed-text,.mbr-section-text": {
+              "letter-spacing": "0.03rem"
+            },
+            ".btn": {
+              "margin-left": "4px !important"
+            },
+            ".animated-element": {
+              "color": "@wordsColor"
+            },
+            ".typed-cursor": {
+              "opacity": "1",
+              "-webkit-animation": "blink 0.7s infinite",
+              "-moz-animation": "blink 0.7s infinite",
+              "animation": "blink 0.7s infinite",
+              "color": "@wordsColor"
+            },
+            "@keyframes blink": {
+              "0%": {
+                "opacity": "1"
+              },
+              "50%": {
+                "opacity": "0"
+              },
+              "100%": {
+                "opacity": "1"
+              }
+            },
+            "@-webkit-keyframes blink": {
+              "0%": {
+                "opacity": "1"
+              },
+              "50%": {
+                "opacity": "0"
+              },
+              "100%": {
+                "opacity": "1"
+              }
+            },
+            "@-moz-keyframes blink": {
+              "0%": {
+                "opacity": "1"
+              },
+              "50%": {
+                "opacity": "0"
+              },
+              "100%": {
+                "opacity": "1"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#232323"
+            },
+            ".mbr-section-subtitle, .typed-text": {
+              "color": "#16a16c"
+            }
+          },
+          "_name": "header7",
+          "_customHTML": "<section class=\"header7\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"Typed\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" condition=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Animated Text\" name=\"showAnimatedText\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@PROJECT_PATH@/assets/images/e-1-vestido-midi-16990-1002x1280.jpeg\" title=\"Background Image\" selected parallax>\n            <input type=\"color\" value=\"#000000\" title=\"Background Color\">\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=kI1YE_qenSU\" title=\"Background Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"rgb(7, 9, 21)\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n        <header condition=\"showSubtitle && showAnimatedText\">Animated Text Settings</header>\n        <select title=\"Words Title\" name=\"wordsTitle\" condition=\"showSubtitle && showAnimatedText\">\n            <option value=\"title1\" selected>Title 1</option>\n            <option value=\"title2\">Title 2</option>\n            <option value=\"title3\">Title 3</option>\n            <option value=\"text\">Text</option>\n            <option value=\"menu\">Menu</option>\n        </select>\n        <input type=\"color\" title=\"Words Color\" name=\"wordsColor\" value=\"#096693\" condition=\"showSubtitle && showAnimatedText\">\n        <input type=\"range\" inline title=\"Type Speed\" name=\"typeSpeed\" min=\"1\" max=\"100\" value=\"40\" step=\"1\" condition=\"showSubtitle && showAnimatedText\">\n        <input type=\"range\" inline title=\"Words Count\" name=\"wordsCount\" min=\"2\" max=\"5\" value=\"3\" step=\"1\" condition=\"showSubtitle && showAnimatedText\">\n        <input type=\"text\" title=\"Word 1\" inline name=\"animatedWord1\" value=\"ATACADO\" condition=\"showSubtitle && showAnimatedText\">\n        <input type=\"text\" title=\"Word 2\" inline name=\"animatedWord2\" value=\"LANÇAMENTOS\" condition=\"showSubtitle && showAnimatedText\">\n        <input type=\"text\" title=\"Word 3\" inline name=\"animatedWord3\" value=\"INVERNO\" condition=\"showSubtitle &amp;&amp; showAnimatedText &amp;&amp; wordsCount > 2\">\n        <input type=\"text\" title=\"Word 4\" inline name=\"animatedWord4\" value=\"Sport\" condition=\"showSubtitle &amp;&amp; showAnimatedText &amp;&amp; wordsCount > 3\">\n        <input type=\"text\" title=\"Word 5\" inline name=\"animatedWord5\" value=\"Military\" condition=\"showSubtitle &amp;&amp; showAnimatedText &amp;&amp; wordsCount > 4\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container-fluid\">\n        <div class=\"row justify-content-center\">\n            <div class=\"mbr-white col-md-12 col-lg-10\">\n                <h1 class=\"mbr-section-title mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">LANÇAMENTOS</h1>\n                <div class=\"typed-text pb-3\" mbr-class=\"{'display-1':wordsTitle=='title1','display-2':wordsTitle=='title2',\n                                      'display-5':wordsTitle=='title3','display-7':wordsTitle=='text',\n                                      'display-4':wordsTitle=='menu'}\" mbr-if=\"showSubtitle\">\n                    <span mbr-text class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-subtitle, .typed-text\">\n                          Novas Coleções&nbsp;</span>\n                    <span mbr-if=\"showAnimatedText\">\n                      <span class=\"animated-element mbr-bold\" data-word1=\"{{animatedWord1}}\" data-word2=\"{{animatedWord2}}\" data-word3=\"{{animatedWord3}}\" data-word4=\"{{animatedWord4}}\" data-word5=\"{{animatedWord5}}\" data-speed=\"{{typeSpeed}}\" data-words=\"{{wordsCount}}\">\n                      </span>\n                    </span>\n                </div>\n                <p class=\"mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text,.mbr-section-btn\">\n                    Free worldwide delivery on orders over 100$. Nice.\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4 mbr-white\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\" class=\"pt-3 mbr-section-btn\"><a class=\"btn btn-md btn-black-outline\" type=\"submit\" data-app-placeholder=\"Type Text\" href=\"https://catalogo.ziro.app/cadastrar\">VER PREÇOS</a></div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow && fullScreen\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "rW6rgq0mTD",
+          "_anchor": "header7-5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-shop": {
+              "display": "table",
+              "width": "100%"
+            },
+            ".mbr-shop .row": {
+              "margin": "0"
+            },
+            ".mbr-shop .btn-sm": {
+              "margin": "0.2rem 0.2rem"
+            },
+            ".mbr-shop .shoppingcart-icons": {
+              "z-index": "105 !important"
+            },
+            ".mbr-shop .shop-title": {
+              "margin-bottom": "18px",
+              "padding-left": "25px",
+              "padding-right": "25px",
+              "display": "inline-block",
+              "max-width": "80%"
+            },
+            ".mbr-shop .sidebar-title": {
+              "line-height": "25px"
+            },
+            ".mbr-shop .shopItemsModal_wraper": {
+              "position": "fixed",
+              "display": "none",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "width": "100%",
+              "height": "100%",
+              "background-color": "rgba(87, 87, 87, 0.4)",
+              "top": "0",
+              "cursor": "pointer",
+              "z-index": "1040"
+            },
+            ".mbr-shop .card-description": {
+              "cursor": "text",
+              "display": "none"
+            },
+            ".mbr-shop .image-modal": {
+              "padding-left": "0",
+              "padding-right": "0",
+              "text-align": "center"
+            },
+            ".mbr-shop .image-modal img": {
+              "max-width": "100%",
+              "max-height": "75vh"
+            },
+            ".mbr-shop .hide-modal": {
+              "display": "none"
+            },
+            ".mbr-shop .shopItemsModal": {
+              "cursor": "default",
+              "padding": "50px",
+              "width": "1000px",
+              "max-width": "100%",
+              "background-color": "#ffffff",
+              "z-index": "2000",
+              "overflow": "auto",
+              "position": "fixed"
+            },
+            ".mbr-shop .shopItemsModal p": {
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .shopItemsModal ul": {
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .shopItemsModal .card-description": {
+              "display": "block",
+              "width": "100%"
+            },
+            ".mbr-shop .shopItemsModal .close-modal": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "width": "50px",
+              "height": "4px",
+              "background-color": "red",
+              "transform": "rotate(45deg)",
+              "-webkit-transform": "rotate(45deg)"
+            },
+            ".mbr-shop .shopItemsModal .close-modal:before": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "width": "50px",
+              "height": "4px",
+              "background-color": "red",
+              "-webkit-transform": "rotate(-45deg)",
+              "transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .test-overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%",
+              "background-color": "rgba(0, 0, 0, 0.5)"
+            },
+            ".mbr-shop .filter-by-pu, .mbr-shop .filter-by-pd, .mbr-shop .filter-by-d": {
+              "display": "inline-block",
+              "margin-right": "3px"
+            },
+            ".mbr-shop .sort-buttons": {
+              "padding-bottom": "1rem",
+              "margin-right": "13px",
+              "text-align": "right"
+            },
+            ".mbr-shop .galleryItem:before": {
+              "width": "0 !important",
+              "height": "0 !important"
+            },
+            ".mbr-shop .modal-dialog": {
+              "max-width": "700px"
+            },
+            ".mbr-shop .mbr-gallery-item": {
+              "left": "0 !important",
+              "top": "0 !important",
+              "vertical-align": "top",
+              "position": "relative !important",
+              "-webkit-transform": "none !important",
+              "transform": "none !important",
+              "padding": "10px"
+            },
+            ".mbr-shop .galleryItem h4, .mbr-shop .carousel-item h4": {
+              "font-style": "normal",
+              "line-height": "1",
+              "text-transform": "none",
+              "letter-spacing": "-1px",
+              "word-spacing": "0",
+              "margin-bottom": "0.3rem",
+              "padding-top": "15px",
+              "transition": "color 0.5s"
+            },
+            ".mbr-shop .galleryItem h5, .mbr-shop .carousel-item h5": {
+              "font-style": "italic",
+              "font-weight": "400",
+              "line-height": "22.36px",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0"
+            },
+            ".mbr-shop .galleryItem p, .mbr-shop .carousel-item p": {
+              "font-style": "italic",
+              "font-weight": "400",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0px",
+              "text-align": "center",
+              "display": "inline"
+            },
+            ".mbr-shop .item-button": {
+              "text-align": "center"
+            },
+            ".mbr-shop .modalButton": {
+              "display": "inline-block",
+              "float": "right",
+              "margin-right": "10px"
+            },
+            ".mbr-shop .modalButton.btn-success": {
+              "right": "15%"
+            },
+            ".mbr-shop .sidebar": {
+              "margin-top": "30px",
+              "position": "relative"
+            },
+            ".mbr-shop .sidebar-block": {
+              "position": "relative"
+            },
+            ".mbr-shop .sidebar-background:after": {
+              "content": "''",
+              "position": "absolute",
+              "width": "100%",
+              "height": "102%",
+              "background-color": "rgba(0, 0, 0, 0.05)",
+              "top": "-20px",
+              "right": "3px"
+            },
+            ".mbr-shop .bestsellers": {
+              "padding-left": "0",
+              "padding-right": "0",
+              "position": "relative",
+              "margin-bottom": "20px"
+            },
+            ".mbr-shop .bestsellers .onsale": {
+              "top": "-15px"
+            },
+            ".mbr-shop .bestsellers .price-block": {
+              "padding-top": "5px",
+              "text-align": "left",
+              "line-height": "1"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item": {
+              "width": "100%"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item img": {
+              "width": "80px",
+              "float": "left",
+              "margin-right": "20px"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item h4": {
+              "text-align": "left",
+              "padding-bottom": "5px",
+              "line-height": "1",
+              "border-bottom": "1px dotted #d6d6d6"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item h5": {
+              "text-align": "left",
+              "display": "none"
+            },
+            ".mbr-shop .bestsellers .mbr-gallery-item p": {
+              "text-align": "left"
+            },
+            ".mbr-shop .bestsellers .btn": {
+              "display": "none"
+            },
+            ".mbr-shop .bestsellers-img": {
+              "display": "inline-block",
+              "width": "80px",
+              "height": "80px",
+              "overflow": "hidden"
+            },
+            ".mbr-shop .bestsellers-title": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .onsale": {
+              "position": "absolute",
+              "top": "5px",
+              "right": "5px",
+              "display": "block",
+              "transition": "color .3s ease",
+              "text-align": "center",
+              "z-index": "95",
+              "height": "30px",
+              "line-height": "30px",
+              "padding": "0 15px",
+              "background": "@saleBg",
+              "color": "contrast(@saleBg)",
+              "border-radius": "30px",
+              "font-weight": "400",
+              "font-style": "normal",
+              "text-transform": "none",
+              "letter-spacing": "0px"
+            },
+            ".mbr-shop .mbr-gallery-item__hided": {
+              "display": "none"
+            },
+            ".mbr-shop .mbr-gallery-item__hided h4, .mbr-shop .mbr-gallery-item__hided h5, .mbr-shop .mbr-gallery-item__hided p": {
+              "display": "none"
+            },
+            ".mbr-shop .mbr-gallery-item__hided .btn": {
+              "display": "none"
+            },
+            ".mbr-shop .galleryItem .price-block": {
+              "display": "block",
+              "margin-bottom": "8px"
+            },
+            ".mbr-shop .galleryItem .price-block span": {
+              "font-style": "normal",
+              "font-weight": "700",
+              "line-height": "1",
+              "text-transform": "none",
+              "letter-spacing": "-1px",
+              "word-spacing": "0"
+            },
+            ".mbr-shop .mbr-gallery-filter": {
+              "padding-left": "0",
+              "text-align": "left",
+              "padding-top": "0"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li": {
+              "position": "relative",
+              "padding": "7px 0 7px 25px",
+              "border-bottom": "1px dotted #d6d6d6",
+              "margin": "0",
+              "font-style": "normal",
+              "font-weight": "400",
+              "line-height": "24.99px",
+              "text-transform": "none",
+              "letter-spacing": "0px",
+              "word-spacing": "0",
+              "direction": "ltr",
+              "border": "none",
+              "display": "list-item",
+              "text-align": "left",
+              "transition": "all 0.3s ease-out",
+              "cursor": "pointer"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li.active": {
+              "background-color": "transparent",
+              "font-weight": "bold"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li:before": {
+              "content": "\"\"",
+              "position": "absolute",
+              "left": "0",
+              "top": "50%",
+              "margin-top": "-2.5px",
+              "background": "rgba(0, 0, 0, 0.3)",
+              "width": "5px",
+              "height": "5px"
+            },
+            ".mbr-shop .mbr-gallery-filter ul li:hover": {
+              "padding-left": "30px",
+              "background-color": "transparent"
+            },
+            ".mbr-shop .range-slider": {
+              "padding-bottom": "25px"
+            },
+            ".mbr-shop .filter-cost": {
+              "display": "block",
+              "vertical-align": "middle",
+              "max-width": "250px",
+              "text-align": "left",
+              "position": "relative",
+              "margin-bottom": "30px"
+            },
+            ".mbr-shop .filter-cost p": {
+              "margin-bottom": "10px",
+              "font-size": "16px",
+              "line-height": "21px",
+              "color": "#666666",
+              "font-weight": "bold"
+            },
+            ".mbr-shop .price-controls": {
+              "position": "relative",
+              "height": "36px",
+              "margin-bottom": "30px",
+              "border": "2px solid #666666",
+              "border-radius": "2px",
+              "font-size": "0"
+            },
+            ".mbr-shop .price-controls label": {
+              "display": "inline-block",
+              "width": "50%",
+              "font-size": "14px",
+              "line-height": "32px",
+              "color": "#666666",
+              "font-weight": "normal",
+              "cursor": "pointer",
+              "margin-bottom": "0"
+            },
+            ".mbr-shop .price-controls label.min-price": {
+              "border-right": "2px solid #666666"
+            },
+            ".mbr-shop .price-controls input": {
+              "width": "100%",
+              "background-color": "#ffffff",
+              "border": "none",
+              "line-height": "31px",
+              "height": "31px",
+              "text-align": "center",
+              "-webkit-user-select": "none",
+              "-ms-user-select": "none",
+              "user-select": "none"
+            },
+            ".mbr-shop .range-controls": {
+              "position": "relative"
+            },
+            ".mbr-shop .range-controls .scale": {
+              "width": "100%",
+              "height": "2px",
+              "background-color": "rgba(190, 190, 190, 0.3)"
+            },
+            ".mbr-shop .range-controls .bar": {
+              "margin-left": "0",
+              "width": "100%",
+              "height": "2px",
+              "background-color": "#666666"
+            },
+            ".mbr-shop .toggle": {
+              "position": "absolute",
+              "top": "-9px",
+              "width": "4px",
+              "height": "4px",
+              "border": "8px solid #666666",
+              "border-radius": "100%",
+              "box-sizing": "content-box",
+              "background-color": "#ababab",
+              "cursor": "pointer"
+            },
+            ".mbr-shop .toggle:hover, .mbr-shop .toggle:active": {
+              "background-color": "#c0a375"
+            },
+            ".mbr-shop .min-toggle": {
+              "left": "0"
+            },
+            ".mbr-shop .max-toggle": {
+              "right": "0"
+            },
+            ".mbr-shop .hided-by-price": {
+              "display": "none"
+            },
+            ".mbr-shop .text-modal": {
+              "padding-right": "30px",
+              "padding-left": "30px"
+            },
+            ".mbr-shop .text-modal .item-button": {
+              "text-align": "left !important"
+            },
+            ".mbr-shop .text-modal .price-block": {
+              "line-height": "1",
+              "border-bottom": "1px dotted #d6d6d6"
+            },
+            ".mbr-shop .text-modal .price-block p": {
+              "display": "inline"
+            },
+            ".mbr-shop .text-modal .price-block span": {
+              "display": "inline-block",
+              "font-weight": "700",
+              "padding": "10px 0 20px 0"
+            },
+            ".mbr-shop .text-modal .card-description": {
+              "padding-top": "20px",
+              "display": "block",
+              "font-size": "16px",
+              "line-height": "24px",
+              "margin-bottom": "50px"
+            },
+            ".mbr-shop .modal-control-panel": {
+              "padding-right": "0"
+            },
+            ".mbr-shop .modal-cb": {
+              "display": "inline-block",
+              "float": "right",
+              "margin-right": "10px",
+              "margin-left": "10px"
+            },
+            ".mbr-shop .shopItemsModalBg": {
+              "width": "100%",
+              "height": "100%"
+            },
+            ".mbr-shop .close-modal-wrapper": {
+              "cursor": "pointer",
+              "width": "40px",
+              "height": "40px",
+              "position": "absolute",
+              "top": "0",
+              "right": "0"
+            },
+            ".mbr-shop .close-modal-wrapper:after": {
+              "content": "\"\"",
+              "position": "absolute",
+              "width": "40px",
+              "height": "3px",
+              "background-color": "#cccccc",
+              "top": "50%",
+              "right": "5%",
+              "-webkit-transform": "rotate(-45deg)",
+              "transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .close-modal-wrapper:before": {
+              "content": "\"\"",
+              "position": "absolute",
+              "width": "3px",
+              "height": "40px",
+              "background-color": "#cccccc",
+              "right": "50%",
+              "top": "5%",
+              "-webkit-transform": "rotate(-45deg)",
+              "transform": "rotate(-45deg)"
+            },
+            ".mbr-shop .closeModal": {
+              "position": "absolute",
+              "top": "10px",
+              "right": "10px"
+            },
+            ".mbr-shop .galleryItem .sidebar_wraper": {
+              "text-align": "center"
+            },
+            ".mbr-shop .shopItemsModal .sidebar_wraper": {
+              "text-align": "left"
+            },
+            ".mbr-shop .shopItemsModal .onsale": {
+              "top": "10px",
+              "right": "10px",
+              "border": "1px solid #e7e7e7"
+            },
+            ".mbr-shop .shop-items .onsale, .mbr-shop .bestseller-block .onsale": {
+              "font-size": "15px !important"
+            },
+            ".mbr-shop .item_overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%",
+              "z-index": "99",
+              "background": "transparent"
+            },
+            ".mbr-shop .style_overlay": {
+              "position": "absolute",
+              "width": "100%",
+              "height": "100%"
+            },
+            ".mbr-shop .price-range": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .price-range-reset": {
+              "display": "inline-block"
+            },
+            ".mbr-shop .bestsellers .item-button": {
+              "display": "none !important"
+            },
+            ".mbr-shop .range-slider h4": {
+              "margin-bottom": "15px"
+            },
+            ".mbr-shop .mbr-gallery-filter ul": {
+              "padding-left": "0px",
+              "display": "inline-block",
+              "list-style": "none",
+              "margin-bottom": "0px"
+            },
+            ".mbr-shop .categories:after": {
+              "content": "\"\"",
+              "display": "table",
+              "clear": "both"
+            },
+            "@media (min-width: 767px) and (max-width: 1100px)": {
+              ".mbr-shop .col-md-9": {
+                "width": "100%"
+              },
+              ".mbr-shop .col-md-3": {
+                "width": "100%"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "top": "0"
+              },
+              ".mbr-shop .bestseller-block": {
+                "width": "100%",
+                "margin": "0",
+                "display": "inline-block",
+                "float": "left",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .range-slider": {
+                "width": "49%",
+                "margin": "0",
+                "display": "inline-block",
+                "float": "right",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .bestsellers": {
+                "width": "100%"
+              },
+              ".mbr-shop .bestsellers .mbr-gallery-item": {
+                "width": "49%",
+                "display": "inline-block"
+              },
+              ".mbr-shop .sidebar-categories": {
+                "width": "49%",
+                "margin": "0",
+                "display": "inline-block",
+                "padding-top": "15px"
+              },
+              ".mbr-shop .price-range": {
+                "max-width": "250px",
+                "text-align": "center"
+              },
+              ".clearfix:after": {
+                "content": "\"\"",
+                "display": "table",
+                "clear": "both"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".mbr-shop .mbr-gallery-item": {
+                "width": "33%"
+              }
+            },
+            "@media (max-width: 500px)": {
+              ".mbr-shop .shopItemsModal": {
+                "padding": "50px 10px 10px 10px"
+              },
+              ".mbr-shop .shop-title": {
+                "max-width": "100%"
+              },
+              ".mbr-shop .mbr-gallery-item": {
+                "width": "100%"
+              }
+            },
+            "@media (max-width: 1200px)": {
+              ".mbr-shop .sort-buttons": {
+                "text-align": "center",
+                "margin-right": "0 !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-shop .image-modal": {
+                "text-align": "center"
+              },
+              ".mbr-shop .image-modal img": {
+                "max-height": "50vh",
+                "width": "auto",
+                "max-width": "100%"
+              },
+              ".mbr-shop .shopItemsModal": {
+                "top": "15%",
+                "bottom": "70px",
+                "left": "10%",
+                "width": "80%"
+              },
+              ".mbr-shop .shopItemsModal .image-modal": {
+                "padding-right": "0"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "top": "-1%"
+              }
+            },
+            "@media (max-width: 1100px)": {
+              ".mbr-shop .shopItemsModal": {
+                "max-height": "85vh",
+                "width": "90%",
+                "left": "5%",
+                "margin-left": "0"
+              },
+              ".mbr-shop .sort-buttons": {
+                "margin-right": "21px"
+              },
+              ".mbr-shop .sidebar-background:after": {
+                "right": "0",
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal .card-description": {
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal .price-block": {
+                "width": "100%"
+              },
+              ".mbr-shop .text-modal h4": {
+                "padding-top": "30px"
+              }
+            },
+            ".shopItemsModal_wraper .mbr-section-btn": {
+              "display": "block !important"
+            },
+            ".range-slider .mbr-section-btn": {
+              "margin": "0"
+            },
+            ".oldprice": {
+              "color": "#767676",
+              "padding-left": ".8rem",
+              "text-decoration": "line-through"
+            },
+            ".mbr-gallery-item": {
+              ".sidebar_wraper": {
+                ".mbr-section-btn": {
+                  "text-align": "left"
+                },
+                ".item-title": {
+                  "text-align": "left",
+                  "padding-bottom": ".5rem"
+                },
+                ".item-subtitle": {
+                  "text-align": "left"
+                },
+                ".price-block": {
+                  "text-align": "left"
+                }
+              }
+            },
+            "& when (@shop__showPriceRange)": {
+              ".range-controls": {
+                "display": "block !important"
+              }
+            },
+            "& when (@shop__showSortButtons)": {
+              ".sort-buttons": {
+                "display": "block !important"
+              }
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".shopItemsModal.row": {
+                "position": "absolute !important",
+                "top": "calc(50% ~'-' 300px) !important",
+                "left": "calc(50% ~'-' 500px) !important"
+              }
+            }
+          },
+          "_name": "shop6",
+          "_customHTML": "<section class=\"mbr-gallery\" group=\"Shops\" once=\"shops\" plugins=\"mobirise-shop,Gallery\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Card Bg\" name=\"cardBg\" value=\"#a38dfd\">\n        <input type=\"color\" title=\"On Sale Bg\" name=\"saleBg\" value=\"#fe525b\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"shop\" title=\"Shop\" name=\"shop\" buttons=\"secondary\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-shop=\"shop\" class=\"mbr-shop\"></div>\n    </div>\n\n</section>",
+          "_cid": "rW6qcUbT2y",
+          "_anchor": "shop6-1",
+          "_protectedParams": [
+            "shop__showSidebar",
+            "shop__reverseSidebar",
+            "shop__showSortButtons",
+            "shop__showBestSellers",
+            "shop__showPriceRange",
+            "shop__showTags",
+            "text_all",
+            "sidebar1",
+            "sidebar2",
+            "sidebar3",
+            "shop__filtersTextStyle",
+            "buttons_default_class",
+            "filter_by_d",
+            "filter_by_pu",
+            "filter_by_pd",
+            "price_range",
+            "price_range_reset",
+            "shop"
+          ],
+          "_global": false,
+          "_once": "shops",
+          "_params": {
+            "shop__showSidebar": false,
+            "shop__reverseSidebar": false,
+            "shop__showSortButtons": false,
+            "shop__showBestSellers": true,
+            "shop__showPriceRange": true,
+            "shop__showTags": true,
+            "text_all": "All",
+            "sidebar1": "Best Sellers",
+            "sidebar2": "Price Range",
+            "sidebar3": "Filter",
+            "shop__filtersTextStyle": "display-7",
+            "buttons_default_class": "secondary",
+            "filter_by_d": "<a class=\"btn btn-sm btn-secondary disableSortButton\" href=\"\">Classificação padrão</a>",
+            "filter_by_pu": "<a class=\"btn btn-sm btn-secondary-outline disableSortButton\" href=\"\">Preço: Mai barato / Mais caro</a>",
+            "filter_by_pd": "<a class=\"btn btn-sm btn-secondary-outline disableSortButton\" href=\"\">Preço: Mais Caro / Mais Barato</a>",
+            "price_range": "<a class=\"btn btn-sm btn-primary\" data-app-btn=\"true\" href=\"\">Filtro</a>",
+            "price_range_reset": "<a class=\"btn btn-sm btn-secondary\" data-app-btn=\"true\" href=\"\">Mostrar tudo</a>",
+            "shop": [
+              {
+                "tags": "Impressionante",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "",
+                "itemDescription": "Cadastre em nossa plataforma de Atacado e veja preços",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "R$ Consulte",
+                "oldPriceValue": "$136",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://catalogo.ziro.app/cadastrar\" data-app-placeholder=\"Type Text\" class=\"btn btn-secondary display-7\">VER PREÇOS</a>",
+                "image": "@PROJECT_PATH@/assets/images/119,90%202-960x1280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/11990-2-960x1280-800x1067.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Digite aqui a legenda",
+                "active": false,
+                "alt": "",
+                "title": ""
+              },
+              {
+                "tags": "Animado",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "",
+                "itemDescription": "Cadastre em nossa plataforma de Atacado e veja preços",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "R$&nbsp;Consulte",
+                "oldPriceValue": "$192",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://catalogo.ziro.app/cadastrar\" data-app-placeholder=\"Type Text\" class=\"btn btn-secondary display-7\">VER PREÇOS</a>",
+                "image": "@PROJECT_PATH@/assets/images/119,90%204-960x1280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/11990-4-960x1280-800x1067.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Digite aqui a legenda",
+                "active": false,
+                "alt": "",
+                "title": ""
+              },
+              {
+                "tags": "Animado",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "",
+                "itemDescription": "Cadastre em nossa plataforma de Atacado e veja preços",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "R$ Consulte",
+                "oldPriceValue": "$192",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://catalogo.ziro.app/cadastrar\" data-app-placeholder=\"Type Text\" class=\"btn btn-secondary display-7\">Compre!</a>",
+                "image": "@PROJECT_PATH@/assets/images/139,90%201-960x1280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/13990-1-960x1280-800x1067.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Digite aqui a legenda",
+                "active": false,
+                "alt": "",
+                "title": ""
+              },
+              {
+                "tags": "Animado",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "",
+                "itemDescription": "Cadastre em nossa plataforma de Atacado e veja preços",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "R$ Consulte",
+                "oldPriceValue": "$192",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://catalogo.ziro.app/cadastrar\" data-app-placeholder=\"Type Text\" class=\"btn btn-secondary\">Compre!</a>",
+                "image": "@PROJECT_PATH@/assets/images/199,90%201-930x1280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/19990-1-930x1280-800x1101.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Digite aqui a legenda",
+                "active": true,
+                "alt": "",
+                "title": ""
+              },
+              {
+                "tags": "Impressionante",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "",
+                "itemDescription": "Cadastre em nossa plataforma de Atacado e veja preços",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "R$ Consulte",
+                "oldPriceValue": "$136",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://catalogo.ziro.app/cadastrar\" data-app-placeholder=\"Type Text\" class=\"btn btn-secondary display-7\">VER PREÇOS</a>",
+                "image": "@PROJECT_PATH@/assets/images/115,00%201-960x1280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/11500-1-960x1280-800x1067.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Digite aqui a legenda",
+                "active": false,
+                "alt": "",
+                "title": ""
+              },
+              {
+                "tags": "Impressionante",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "",
+                "itemDescription": "Calçados casuais (entre em contato para Tamanho)<br><br><ul><li>Tecido com textura leve</li> <li>Decote V Arredondado</li> <li>Pom pom trims</li> <li>Ajuste regular - verdadeiro ao tamanho</li></ul> <br>Única casa Bureau autor, mas saia do vulputate.\nEstresse alvo temperatura do vale, que se formou um monte de maquiagem.<br><br>Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "R$ Consulte",
+                "oldPriceValue": "$136",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\" class=\"btn btn-secondary display-7\">VER PREÇOS</a>",
+                "image": "@PROJECT_PATH@/assets/images/159,90%202-851x1280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/15990-2-851x1280-800x1203.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Digite aqui a legenda",
+                "active": false,
+                "alt": "",
+                "title": ""
+              },
+              {
+                "tags": "Impressionante",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "",
+                "itemDescription": "Calçados casuais (entre em contato para Tamanho)<br><br><ul><li>Tecido com textura leve</li> <li>Decote V Arredondado</li> <li>Pom pom trims</li> <li>Ajuste regular - verdadeiro ao tamanho</li></ul> <br>Única casa Bureau autor, mas saia do vulputate.\nEstresse alvo temperatura do vale, que se formou um monte de maquiagem.<br><br>Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "R$ Consulte",
+                "oldPriceValue": "$136",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\" class=\"btn btn-secondary display-7\">VER PREÇOS</a>",
+                "image": "@PROJECT_PATH@/assets/images/159,90%203-960x1280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/15990-3-960x1280-800x1067.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Digite aqui a legenda",
+                "active": false,
+                "alt": "",
+                "title": ""
+              },
+              {
+                "tags": "Impressionante",
+                "bestSeller": false,
+                "onSale": false,
+                "oldPrice": false,
+                "itemTitle": "",
+                "itemDescription": "Calçados casuais (entre em contato para Tamanho)<br><br><ul><li>Tecido com textura leve</li> <li>Decote V Arredondado</li> <li>Pom pom trims</li> <li>Ajuste regular - verdadeiro ao tamanho</li></ul> <br>Única casa Bureau autor, mas saia do vulputate.\nEstresse alvo temperatura do vale, que se formou um monte de maquiagem.<br><br>Product code: <b>385DDF5p</b>",
+                "itemPriceTitle": "From: ",
+                "itemPrice": "R$ Consulte",
+                "oldPriceValue": "$136",
+                "sale": "-50%",
+                "button": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\" class=\"btn btn-secondary display-7\">VER PREÇOS</a>",
+                "image": "@PROJECT_PATH@/assets/images/159,90-950x1280.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/15990-950x1280-800x1078.jpg",
+                "customStyle5": "display-5",
+                "customStyle7": "display-7",
+                "customStyleSale": "display-7",
+                "customStyleTags": "display-4",
+                "caption": "Digite aqui a legenda",
+                "active": false,
+                "alt": "",
+                "title": ""
+              }
+            ]
+          }
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".container-fluid": {
+              "padding": "0 3rem"
+            },
+            ".mbr-section-title": {
+              "color": "#7ccbf1",
+              "text-align": "right"
+            },
+            ".btn": {
+              "margin-top": "0"
+            },
+            ".media-container-column": {
+              "padding": "0 2rem"
+            },
+            "@media (max-width: 767px)": {
+              ".container-fluid": {
+                "padding": "0 1rem"
+              },
+              ".btn": {
+                "margin-top": "0.4rem"
+              },
+              ".mbr-section-btn": {
+                "margin": "0"
+              }
+            },
+            ".mbr-section-subtitle": {
+              "text-align": "right",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "info2",
+          "_customHTML": "<section group=\"Info info2\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButton\" checked>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/04.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2d10a3\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=kI1YE_qenSU\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container-fluid\">\n        <div class=\"row justify-content-center\">\n            <div class=\"media-container-column col-12 col-lg-8 col-md-6\" mbr-if=\"showTitle || showSubtitle\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-section-title align-left mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">\n                    PARCELE EM ATÉ 6X</h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-left mbr-fonts-style mbr-light mbr-white\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\">Compre a Nova Coleção<br>Parcele Sem Juros no Cartão de Crédito</h3>\n            </div>\n            <div class=\"media-container-column col-12 col-lg-4 col-md-6\" mbr-if=\"showButton\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"https://catalogo.ziro.app/cadastrar\" data-app-placeholder=\"Type Text\">COMPRAR</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rW6rthEYZ5",
+          "_anchor": "info2-7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".social-media": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "flex-end",
+              "justify-content": "flex-end",
+              "padding-right": "4rem",
+              "ul": {
+                "margin": "0",
+                "padding": "0",
+                "margin-bottom": "8px",
+                "li": {
+                  "padding": "4px",
+                  "display": "inline-block"
+                }
+              }
+            },
+            ".logo-section": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "flex-start",
+              "justify-content": "flex-start",
+              "padding-left": "4rem"
+            },
+            ".icon-transition span": {
+              "color": "rgb(255, 255, 255)",
+              "display": "block",
+              "padding": "0.1rem 0.9rem",
+              "height": "4em",
+              "line-height": "4em",
+              "border-radius": "50%",
+              "background-color": "@circleColor",
+              "width": "4em",
+              "-webkit-transition": "all 0.3s ease-out 0s",
+              "transition": "all 0.3s ease-out 0s",
+              "font-size": "13px"
+            },
+            ".icon-transition span:hover": {
+              "background-color": "@secondaryColor"
+            },
+            ".mbr-text": {
+              "color": "#cccccc"
+            },
+            "@media (max-width: 991px)": {
+              ".social-media": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "padding-right": "0rem"
+              },
+              ".logo-section": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "padding-left": "0rem",
+                "margin-bottom": "1.5rem"
+              },
+              ".mbr-text": {
+                "margin-bottom": "1.5rem"
+              }
+            }
+          },
+          "_name": "footer2",
+          "_customHTML": "<section group=\"Footers\" global mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n        <select title=\"Icons Count\" name=\"iconsCount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n        </select>\n        <input type=\"color\" title=\"Circle Color\" name=\"circleColor\" value=\"#ffe401\" condition=\"showIcons\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/03.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container-fluid\">\n        <div class=\"row align-center justify-content-center align-items-center\">\n            <div class=\"logo-section col-sm-12 col-lg-4\" mbr-if=\"showLogo\">\n                <a href=\"https://catalogo.ziro.app/cadastrar\"><img src=\"@PROJECT_PATH@/assets/images/logo-ziro-122x122.png\" height=\"128\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\" title>\n                </a>\n            </div>\n            <div class=\"col-sm-12 col-lg-4 mbr-text mbr-fonts-style mbr-light\" mbr-text mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\">\n                © 2020 - Plataforma de Atacado Desenvolvida Pela Ziro</div>\n            <div class=\"social-media col-sm-12 col-lg-4\" mbr-if=\"showIcons\">\n                <ul>\n                    <li mbr-if=\"iconsCount > 0\">\n                      <a class=\"icon-transition\" href=\"https://instagram.com/ziromoda\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-instagram socicon\"></span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 1\">\n                      <a class=\"icon-transition\" href=\"https://facebook.com/ziromodabr\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\"></span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 2\">\n                      <a class=\"icon-transition\" href=\"https://pinterest.com/ziromoda\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-pinterest socicon\"></span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 3\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 4\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-rss socicon\" style></span>\n                      </a>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rW6rIKlAXY",
+          "_anchor": "footer2-b",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
